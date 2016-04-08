@@ -31,10 +31,13 @@
 
     var vacation = prompt ("Which season am I going on vacation?");
     if (vacation = "summer"){
-      alert ("Good guess. Try again.")
+      vacation = prompt ("Guess again")
     }
-    else if (vacation = "spring"){
-      alert ("Actually, no.")
+    if (vacation = "spring"){
+      vacation = prompt ("Actually, no. Try again")
+    }
+    if (vacation = "fall" || "autumn"){
+      vacation = prompt ("Ooooooh! So close!")
     }
 
     </script>
