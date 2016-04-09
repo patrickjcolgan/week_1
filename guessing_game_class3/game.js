@@ -31,9 +31,9 @@
 // }
 
 //Number guessing
-var guessNum = prompt ("Okay, time to guess the number I'm thinking of from 1 - 10.")
-var message;
-guessNum = parseInt(prompt ("Okay, time to guess the number I'm thinking of from 1 - 10."))
+//var guessNum = prompt ("Okay, time to guess the number I'm thinking of from 1 - 10.")
+
+var guessNum = parseInt(prompt ("Okay, time to guess the number I'm thinking of from 1 - 10."))
 if (guessNum === 5){
   alert("That's right! You guessed it.")
 } else if (guessNum > 5) {
