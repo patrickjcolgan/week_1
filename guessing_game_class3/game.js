@@ -28,7 +28,7 @@ if (team === teamAnswer){
 var childAnswer = prompt ("Do I have a son or a daughter?")//question three
 childAnswer = childAnswer.toUpperCase();
 console.log("user input for childAnswer " + childAnswer);
-if (child === childAnswer || "s" || "S"){
+if (child === childAnswer || childAnswer === "s" || childAnswer === "S"){
   alert ("That's right. My son's name is Silas")
   counter++;
 } else {
@@ -47,3 +47,13 @@ if (guessAge === 3){
   counter++;
 }
 alert("You got " + counter + " questions right!")
+
+var userNum = parseInt(prompt("Let's do one more. Guess a number between 1 and 10"));
+while (userNum !==6) {
+if (userNum > 6) {
+  userNum = parseInt(prompt ("Too high. Please try again."));
+} else if (userNum < 6){
+  userNum = parseInt(prompt ("Too low. Please try again."));
+}
+}
+alert ("You guess it!");
