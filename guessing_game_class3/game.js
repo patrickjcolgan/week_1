@@ -1,6 +1,7 @@
 var dessert = "ICE CREAM"; // question one
 var team = "SEAHAWKS"; // question two
 var child = "SON"; // question three
+var guessAge = 3; // questioin four
 var counter = 0;
 
 var userName = prompt ("Hey, what's your name?"); //greeting
@@ -28,17 +29,15 @@ var childAnswer = prompt ("Do I have a son or a daughter?")//question three
 childAnswer = childAnswer.toUpperCase();
 console.log("user input for childAnswer " + childAnswer);
 if (child === childAnswer || "s" || "S"){
-  alert ("That's right. His name is Silas")
+  alert ("That's right. My son's name is Silas")
   counter++;
 } else {
   alert ("Actually, I have a son.")
 }
 
-//Guess age of son
-//var guessNum = prompt ("Okay, time to guess the number I'm thinking of from 1 - 10.")
 
-guessAge = 3;
 var guessAge = parseInt(prompt ("How old do you think my son is?"))
+console.log("user input for guessAge " + guessAge);
 if (guessAge === 3){
   alert("That's right! You guessed it.")
   counter++;
