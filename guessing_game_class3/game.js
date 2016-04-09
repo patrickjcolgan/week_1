@@ -27,7 +27,7 @@ if (team === teamAnswer){
 var childAnswer = prompt ("Do I have a son or a daughter?")//question three
 childAnswer = childAnswer.toUpperCase();
 console.log("user input for childAnswer " + childAnswer);
-if (child === childAnswer){
+if (child === childAnswer || "s" || "S"){
   alert ("That's right. His name is Silas")
   counter++;
 } else {
@@ -41,7 +41,7 @@ guessAge = 3;
 var guessAge = parseInt(prompt ("How old do you think my son is?"))
 if (guessAge === 3){
   alert("That's right! You guessed it.")
-  counter++; 
+  counter++;
 } else if (guessAge > 3) {
   alert("Too high. He's 3")
 } else {alert("Close, he's 3")
