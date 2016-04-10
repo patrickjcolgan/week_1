@@ -35,7 +35,6 @@ if (child === childAnswer || childAnswer === "s" || childAnswer === "S"){
   alert ("Actually, I have a son.")
 }
 
-
 var guessAge = parseInt(prompt ("How old do you think my son is?"))
 console.log("user input for guessAge " + guessAge);
 if (guessAge === 3){
@@ -44,8 +43,8 @@ if (guessAge === 3){
 } else if (guessAge > 3) {
   alert("Too high. He's 3")
 } else {alert("Close, he's 3")
-  counter++;
 }
+
 alert("You got " + counter + " questions right!")
 
 var userNum = parseInt(prompt("Let's do one more. Guess a number between 1 and 10"));
